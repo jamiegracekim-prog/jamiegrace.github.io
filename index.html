@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Homepage</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&family=Raleway:wght@300;400;700&display=swap");
+
+      body {
+        font-family: "Fredoka", "Raleway", sans-serif;
+        background-color: #e6f0ff;
+        margin: 0;
+      }
+
+      /* ---------------- NAV BAR ---------------- */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #1e5bd6;
+        padding: 15px 40px;
+        color: white;
+      }
+
+      nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      /* ---------------- HERO SECTION ---------------- */
+      .hero {
+        padding: 80px 20px;
+        text-align: center;
+        background: linear-gradient(to bottom, #1e5bd6, #4e7fff);
+        color: white;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+
+      .hero p {
+        font-size: 1.3rem;
+        max-width: 600px;
+        margin: auto;
+      }
+
+      /* ---------------- GENERAL SECTIONS ---------------- */
+      section {
+        background: white;
+        padding: 20px;
+        margin: 20px auto;
+        width: 90%;
+        max-width: 900px;
+        border-radius: 12px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      img {
+        max-width: 300px;
+        border-radius: 10px;
+        margin: 10px;
+      }
+
+      /* ---------------- TABLE ---------------- */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #87a9ff;
+      }
+
+      th {
+        background-color: #d0ddff;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+
+      a {
+        color: #1e5bd6;
+        font-weight: 600;
+      }
+
+      a:hover {
+        color: #113a8d;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <h2>Jamie Kim</h2>
+      <div>
+        <a href="#about">About</a>
+        <a href="#photos">Photos</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- HERO BANNER -->
+    <div class="hero">
+      <h1>Welcome to My Personal Homepage</h1>
+      <p>A simple intro page designed for my project ✨</p>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <h2>About Me</h2>
+
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 30px;
+          flex-wrap: wrap;
+        "
+      >
+        <p style="flex: 1; font-size: 1.25rem; line-height: 1.7">
+          Hi!! My name is Jamie Kim and I am a freshman at Fordham Rose Hill. I
+          am from Old Tappan, New Jersey. I love traveling, going into the city,
+          hanging out with my friends, and playing volleyball. I have two
+          siblings and a dog.
+        </p>
+
+        <img
+          src="images/SANDLERMOSH.jpeg"
+          alt="Jamie photo"
+          style="width: 300px; border-radius: 12px"
+        />
+      </div>
+    </section>
+
+    <!-- FAVORITE PHOTOS -->
+    <section id="photos">
+      <h2>Favorite Photos</h2>
+      <p>Here are some of my favorite memories!</p>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 15px">
+        <img src="images/iceskating.jpeg" />
+        <img src="images/vb.JPG" />
+        <img src="images/campus.jpeg" />
+        <img src="images/cococult.jpeg" />
+        <img src="images/botans.jpeg" />
+        <img src="images/track.jpeg" />
+        <img src="images/zoo.jpeg" />
+        <img src="images/campus.JPG" />
+      </div>
+    </section>
+
+    <!-- VIDEO EMBED (from tutorial) -->
+    <section>
+      <h2>My Website Inspiration Video</h2>
+      <p>I followed this tutorial to learn HTML & CSS!</p>
+
+      <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/ZPMtug9qExk"
+        title="YouTube video"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section id="schedule">
+      <h2>My Weekly Schedule</h2>
+      <table>
+        <tr>
+          <th>Day</th>
+          <th>Activity</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>Study & CISC</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>VB & Class</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Class & Studying</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>VB & Class</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>Class & Friends</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact Me!</h2>
+      <ul>
+        <li>
+          <a href="https://mail.google.com/mail/" target="_blank">Email</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@fordhamwcvb" target="_blank"
+            >YouTube</a
+          >
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank"
+            >Instagram @jamiegracekim</a
+          >
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
